@@ -1,0 +1,129 @@
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    .border {
+    border: solid black;
+    }
+
+    #container{
+                display: grid;
+                grid-template-areas: 
+                "Jader Jader Jader Jader"
+                "Berkman Berkman Berkman Berkman"
+                "nav nav nav nav"
+                "Jader1 Jader2 Jader3 Jader4"
+                "Berkman1 Berkman1 Berkman1 Berkman1"
+                "Berkman2 Berkman2 Berkman2 Berkman2"
+                "Berkman3 Berkman3 Berkman3 Berkman3"
+                "footer footer footer footer    "
+                ;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                }
+    #Jader {
+    background-color: rgb(114, 162, 187);
+    grid-area: Jader;
+    padding: 1px;
+    }
+
+    #Berkman {
+    background-color: #f8f7f5;
+    grid-area: Berkman;
+    padding: 15px;
+    }
+
+    nav {
+    background-color: #d9e3ec;
+    grid-area: nav;
+    padding: 10%;
+}
+
+    #Jader1 {
+    background-color: #7b9bc2;
+    grid-area: Jader1;    
+    padding: 50px;
+}
+
+    #Jader2 {
+    background-color: #a4b9d4;
+    grid-area: Jader2;    
+}
+
+    #Jader3 {
+    background-color: #d8e2ee;
+    grid-area: Jader3;    
+}
+
+    #Jader4 {
+    background-color: #b8c8df;
+    grid-area: Jader4;    
+}
+
+    #Berkman1 {
+    background-color: #efeeec;
+    grid-area: Berkman1;    
+}
+
+    #Berkman2 {
+    background-color: #eae5e2;
+    grid-area: Berkman2;    
+}
+
+    #Berkman3 {
+    background-color: #efeeec;
+    grid-area: Berkman3;    
+}
+aside{
+    padding: 7%;
+}
+
+    footer {
+    background-color: #89adcf;
+    grid-area: footer;
+    padding: 7%;
+    }
+
+
+
+    @media (max-width: 480px) {
+        #container {
+        grid-template-areas:
+            "Berkman"
+            "nav"
+            "Jader1"
+            "Jader2"
+            "Jader3"
+            "Jader4"
+            "Berkman1"
+            "Berkman2"
+            "Berkman3"
+            "footer";
+        }
+        #Jader {
+        display: none;
+        }
+        nav {
+        padding: 15%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        #container {
+        grid-template-areas:
+            "Berkman Berkman"
+            "nav nav"
+            "Jader1 Jader2"
+            "Jader3 Jader4"
+            "Berkman1 Berkman1"
+            "Berkman2 Berkman2"
+            "Berkman3 Berkman3"
+            "footer footer";
+        }
+        #Jader {
+        display: none;
+        }
+    }
+    
